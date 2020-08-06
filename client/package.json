@@ -1,0 +1,9 @@
+{
+  "name": "ario",
+  "version": "0.0.1",
+  "description": "A web based GUI for aria2 download manager",
+  "main": "index.js",
+  "repository": "git@github.com:alireza-msv/ario.git",
+  "author": "Alireza Mousavi (alghoochi@gmail.com)",
+  "license": "MIT"
+}
