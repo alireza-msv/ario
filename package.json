@@ -1,0 +1,10 @@
+{
+  "name": "ario",
+  "version": "0.1.0",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "author": "Alireza Mousavi <alghoochi@gmail.com>",
+  "license": "MIT"
+}
