@@ -1,0 +1,71 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`respondTo tests should create mediaQuery for LG breakpoint 1`] = `
+Array [
+  "
+  @media(min-width: ",
+  "992px",
+  ") {
+    ",
+  "background-color: pink;",
+  "
+  }
+",
+]
+`;
+
+exports[`respondTo tests should create mediaQuery for MD breakpoint 1`] = `
+Array [
+  "
+  @media(min-width: ",
+  "768px",
+  ") {
+    ",
+  "background-color: yellow;",
+  "
+  }
+",
+]
+`;
+
+exports[`respondTo tests should create mediaQuery for SM breakpoint 1`] = `
+Array [
+  "
+  @media(min-width: ",
+  "576px",
+  ") {
+    ",
+  "background-color: red;",
+  "
+  }
+",
+]
+`;
+
+exports[`respondTo tests should create mediaQuery for XL breakpoint 1`] = `
+Array [
+  "
+  @media(min-width: ",
+  "1200px",
+  ") {
+    ",
+  "background-color: aqua;",
+  "
+  }
+",
+]
+`;
+
+exports[`respondTo tests should create mediaQuery for XXL breakpoint 1`] = `
+Array [
+  "
+  @media(min-width: ",
+  "1600px",
+  ") {
+    ",
+  "background-color: purple;",
+  "
+  }
+",
+]
+`;
