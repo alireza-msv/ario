@@ -1,0 +1,70 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Theme tests should render correctly 1`] = `
+<ThemeProvider
+  theme={
+    Object {
+      "borderRadiuses": Object {
+        "lg": "15px",
+        "md": "10px",
+        "sm": "5px",
+        "xl": "20px",
+        "xxl": "30px",
+      },
+      "breakpoints": Object {
+        "lg": "992px",
+        "md": "768px",
+        "sm": "576px",
+        "xl": "1200px",
+        "xxl": "1600px",
+      },
+      "colors": Object {
+        "gray100": "#FAFAFA",
+        "gray200": "#BEBEBE",
+        "gray300": "#AAAAAA",
+        "gray400": "#757575",
+        "gray500": "#606060",
+        "gray600": "#404040",
+        "primary500": "#BB2299",
+        "secondary100": "#F7F7FA",
+      },
+      "font": Object {
+        "family": "roboto",
+        "size": "16px",
+      },
+      "fontWeights": Object {
+        "black": 900,
+        "bold": 700,
+        "light": 300,
+        "medium": 500,
+        "regular": 400,
+        "thin": 100,
+      },
+      "sizes": Object {
+        "headerHeight": "104px",
+        "layoutHorizontalPadding": "30px",
+        "layoutVerticalPadding": "30px",
+      },
+      "transitions": Object {
+        "fast": "150ms",
+        "normal": "300ms",
+        "slow": "500ms",
+        "superSlow": "1000ms",
+      },
+      "zIndex": Object {
+        "zIndex0": 0,
+        "zIndex1": 1,
+        "zIndex10": 10,
+        "zIndex100": 100,
+        "zIndex1000": 1000,
+      },
+    }
+  }
+>
+  <Roboto />
+  <Memo(GlobalStyleComponent) />
+  <div>
+    TEST
+  </div>
+</ThemeProvider>
+`;
