@@ -19,6 +19,8 @@ exports[`Theme tests should render correctly 1`] = `
         "xxl": "1600px",
       },
       "colors": Object {
+        "background": "#F7F7FA",
+        "foreground": "#FFF",
         "gray100": "#FAFAFA",
         "gray200": "#BEBEBE",
         "gray300": "#AAAAAA",

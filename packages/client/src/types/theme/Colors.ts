@@ -1,4 +1,6 @@
 interface Colors {
+  background: string,
+  foreground: string,
   primary500: string,
   secondary100: string,
   gray100: string,

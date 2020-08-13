@@ -10,7 +10,7 @@ const GlobalStyles = createGlobalStyle`
   body {
     margin: 0;
     padding: 0;
-    background-color: ${({ theme }) => theme.colors.secondary100};
+    background-color: ${({ theme }) => theme.colors.background};
     font-family: ${({ theme }) => theme.font.family};
     font-weight: ${({ theme }) => theme.fontWeights.regular};
   }
