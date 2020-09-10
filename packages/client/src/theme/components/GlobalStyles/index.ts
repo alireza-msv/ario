@@ -13,6 +13,7 @@ const GlobalStyles = createGlobalStyle`
     background-color: ${({ theme }) => theme.colors.background};
     font-family: ${({ theme }) => theme.font.family};
     font-weight: ${({ theme }) => theme.fontWeights.regular};
+    height: 100%;
   }
   *, *:before, *:after {
     box-sizing: border-box;
