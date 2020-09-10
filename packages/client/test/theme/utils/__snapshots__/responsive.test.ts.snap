@@ -3,8 +3,8 @@
 exports[`respondTo tests should create mediaQuery for LG breakpoint 1`] = `
 Array [
   "
-  @media(min-width: ",
-  "992px",
+  @media(",
+  "min-width: 992px",
   ") {
     ",
   "background-color: pink;",
@@ -17,8 +17,8 @@ Array [
 exports[`respondTo tests should create mediaQuery for MD breakpoint 1`] = `
 Array [
   "
-  @media(min-width: ",
-  "768px",
+  @media(",
+  "min-width: 768px",
   ") {
     ",
   "background-color: yellow;",
@@ -31,8 +31,8 @@ Array [
 exports[`respondTo tests should create mediaQuery for SM breakpoint 1`] = `
 Array [
   "
-  @media(min-width: ",
-  "576px",
+  @media(",
+  "min-width: 576px",
   ") {
     ",
   "background-color: red;",
@@ -45,8 +45,8 @@ Array [
 exports[`respondTo tests should create mediaQuery for XL breakpoint 1`] = `
 Array [
   "
-  @media(min-width: ",
-  "1200px",
+  @media(",
+  "min-width: 1200px",
   ") {
     ",
   "background-color: aqua;",
@@ -59,8 +59,8 @@ Array [
 exports[`respondTo tests should create mediaQuery for XXL breakpoint 1`] = `
 Array [
   "
-  @media(min-width: ",
-  "1600px",
+  @media(",
+  "min-width: 1600px",
   ") {
     ",
   "background-color: purple;",

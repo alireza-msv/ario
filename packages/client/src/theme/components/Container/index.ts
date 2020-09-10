@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components';
 import Breakpoint from '~/types/theme/Breakpoint';
-import respondTo from '~/theme/utils/respondTo';
+import { respondTo } from '~/theme/utils/responsive';
 
 const Container = styled.section`
   width: 100%;
