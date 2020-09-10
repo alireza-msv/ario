@@ -18,5 +18,9 @@ declare module 'styled-components' {
     breakpoints: Breakpoints,
     borderRadiuses: BorderRadiuses,
     sizes: Sizes,
+    grid: {
+      cols: number,
+      gutter: string,
+    },
   }
 }
