@@ -42,7 +42,13 @@ exports[`Theme tests should render correctly 1`] = `
         "regular": 400,
         "thin": 100,
       },
+      "grid": Object {
+        "cols": 12,
+        "gutter": "15px",
+      },
       "sizes": Object {
+        "contentHorizontalPadding": "25px",
+        "contentVerticalPadding": "25px",
         "headerHeight": "104px",
         "layoutHorizontalPadding": "30px",
         "layoutVerticalPadding": "30px",
