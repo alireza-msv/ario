@@ -46,8 +46,6 @@ const theme: DefaultTheme = {
     layoutHorizontalPadding: '30px',
     layoutVerticalPadding: '30px',
     headerHeight: '104px',
-    contentVerticalPadding: '25px',
-    contentHorizontalPadding: '25px',
   },
   grid: {
     cols: 12,
