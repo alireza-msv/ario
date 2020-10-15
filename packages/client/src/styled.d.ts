@@ -7,6 +7,7 @@ import ZIndex from './types/theme/ZIndex';
 import Breakpoints from './types/theme/Breakpoints';
 import BorderRadiuses from './types/theme/BorderRadiuses';
 import Sizes from './types/theme/Sizes';
+import Paddings from './types/theme/Paddings';
 
 declare module 'styled-components' {
   export interface DefaultTheme {
@@ -18,6 +19,7 @@ declare module 'styled-components' {
     breakpoints: Breakpoints,
     borderRadiuses: BorderRadiuses,
     sizes: Sizes,
+    paddings: Paddings,
     grid: {
       cols: number,
       gutter: string,

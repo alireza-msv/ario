@@ -46,6 +46,13 @@ exports[`Theme tests should render correctly 1`] = `
         "cols": 12,
         "gutter": "15px",
       },
+      "paddings": Object {
+        "lg": "24px",
+        "md": "16px",
+        "none": "0",
+        "sm": "8px",
+        "xl": "32px",
+      },
       "sizes": Object {
         "headerHeight": "104px",
         "layoutHorizontalPadding": "30px",

@@ -42,6 +42,13 @@ const theme: DefaultTheme = {
     xl: '20px',
     xxl: '30px',
   },
+  paddings: {
+    none: '0',
+    sm: '8px',
+    md: '16px',
+    lg: '24px',
+    xl: '32px',
+  },
   sizes: {
     layoutHorizontalPadding: '30px',
     layoutVerticalPadding: '30px',
