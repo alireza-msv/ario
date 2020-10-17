@@ -1,12 +1,26 @@
 import styled from 'styled-components';
+import PaddingSize from '~/types/theme/PaddingSize';
+import { paddingSizeToCss } from '~/theme/utils/paddings';
 
-const Content = styled.div`
-  height: 100%;
-  width: 100%;
+interface ContentProps {
+  padding?: PaddingSize,
+  verticalPadding?: PaddingSize,
+  horizontalPadding?: PaddingSize,
+}
+
+const Content = styled.div<ContentProps>`
   border-radius: ${({ theme }) => theme.borderRadiuses.md};
   background-color: ${({ theme }) => theme.colors.foreground};
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
-  padding: ${({ theme }) => `${theme.sizes.contentVerticalPadding} ${theme.sizes.contentHorizontalPadding}`};
+  ${({
+    padding,
+    verticalPadding,
+    horizontalPadding,
+  }) => paddingSizeToCss(verticalPadding || padding, horizontalPadding || padding)};
 `;
+
+Content.defaultProps = {
+  padding: PaddingSize.MD,
+};
 
 export default Content;
