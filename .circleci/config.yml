@@ -7,7 +7,7 @@ jobs:
       - checkout
       - run: cd packages/client
       - run: yarn install
-      - run: yarn jest
+      - run: ./node_modules/.bin/jest --config="jest.config.js" 
 
 workflows:
   test:
