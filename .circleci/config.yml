@@ -5,9 +5,8 @@ jobs:
       - image: 'circleci/node:latest'
     steps:
       - checkout
-      - run: cd packages/client
       - run: yarn install
-      - run: ./node_modules/.bin/jest --config="jest.config.js" 
+      - run: yarn workspace @ario/client test
 
 workflows:
   test:
