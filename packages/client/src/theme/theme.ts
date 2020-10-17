@@ -53,6 +53,11 @@ const theme: DefaultTheme = {
     layoutHorizontalPadding: '30px',
     layoutVerticalPadding: '30px',
     headerHeight: '104px',
+    inputHeight: {
+      sm: '34px',
+      md: '40px',
+      lg: '48px',
+    },
   },
   grid: {
     cols: 12,
