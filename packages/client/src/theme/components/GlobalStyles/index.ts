@@ -4,8 +4,8 @@ const GlobalStyles = createGlobalStyle`
   html {
     font-size: ${({ theme }) => theme.font.size};
     height: 100vh;
-    height: -webkit-fill-available;
-    height: -moz-available;
+    height: -webkit-fill-available; /* stylelint-disable-line */
+    height: -moz-available; /* stylelint-disable-line */
   }
   body {
     margin: 0;
