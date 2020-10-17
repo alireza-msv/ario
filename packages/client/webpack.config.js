@@ -5,13 +5,19 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const OptimizeCssAssetPlugin = require('optimize-css-assets-webpack-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
 const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
+const WebpackBar = require('webpackbar');
 
 const PORT = process.env.port || 3000;
 const ENV = process.env.NODE_ENV || 'development';
 const IS_PROD = ENV === 'production';
 
 module.exports = {
-  entry: path.resolve(__dirname, 'src/index.tsx'),
+  entry: {
+    app: [
+      'webpack-hot-middleware/client?reload=true&timeout=30000&ansiColors=&overlayStyles=&name=client',
+      path.resolve(__dirname, 'src/index.tsx'),
+    ],
+  },
   output: {
     path: path.resolve(__dirname, 'build'),
     publicPath: '/',
@@ -68,6 +74,8 @@ module.exports = {
     ],
   },
   plugins: ([
+    new WebpackBar(),
+    new webpack.HotModuleReplacementPlugin(),
     new webpack.NoEmitOnErrorsPlugin(),
     new webpack.DefinePlugin({
       'process.env.NODE_ENV': JSON.stringify(ENV),
@@ -101,7 +109,7 @@ module.exports = {
     publicPath: '/',
     contentBase: './src',
     historyApiFallback: true,
-    open: true,
+    open: false,
     openPage: `http://localhost:${PORT}`,
   },
 };
