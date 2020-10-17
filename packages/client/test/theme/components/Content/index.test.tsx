@@ -30,7 +30,7 @@ describe('Content tests', () => {
     expect(container.firstChild).toHaveStyleRule('padding', theme.paddings.sm);
   });
 
-  it('should set verticalPadding when both padding and verticalPadding are appliced', () => {
+  it('should set verticalPadding when both padding and verticalPadding are applied', () => {
     const { container } = renderContent({
       padding: PaddingSize.SM,
       verticalPadding: PaddingSize.LG,
@@ -39,7 +39,7 @@ describe('Content tests', () => {
     expect(container.firstChild).toHaveStyleRule('padding', `${theme.paddings.lg} ${theme.paddings.sm}`);
   });
 
-  it('should set horizontalPadding when both padding and horizontalPadding are appliced', () => {
+  it('should set horizontalPadding when both padding and horizontalPadding are applied', () => {
     const { container } = renderContent({
       padding: PaddingSize.SM,
       horizontalPadding: PaddingSize.LG,
