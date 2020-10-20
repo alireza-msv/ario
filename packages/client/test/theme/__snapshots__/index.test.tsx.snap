@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Theme tests should render correctly 1`] = `
-<ThemeProvider
+<Component
   theme={
     Object {
       "borderRadiuses": Object {
@@ -93,9 +93,9 @@ exports[`Theme tests should render correctly 1`] = `
   }
 >
   <Roboto />
-  <Memo(GlobalStyleComponent) />
+  <Memo(l) />
   <div>
     TEST
   </div>
-</ThemeProvider>
+</Component>
 `;
