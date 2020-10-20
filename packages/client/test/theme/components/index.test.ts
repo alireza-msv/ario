@@ -1,4 +1,3 @@
-import Col from '~/theme/components/Col';
 import * as components from '~/theme/components';
 
 jest.mock('~/theme/components/Col', () => true);
