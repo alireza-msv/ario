@@ -88,9 +88,7 @@ module.exports = {
   optimization: {
     minimize: IS_PROD,
     minimizer: [
-      new TerserPlugin({
-        cache: true,
-      }),
+      new TerserPlugin(),
       new OptimizeCssAssetPlugin({}),
       new UglifyJSPlugin({
         uglifyOptions: {
