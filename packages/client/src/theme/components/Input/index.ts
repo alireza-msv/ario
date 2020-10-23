@@ -8,7 +8,7 @@ import {
   propsToBorderRadius,
 } from '~/theme/utils/input';
 
-export interface InputProps {
+export interface InputProps extends React.ComponentPropsWithoutRef<'input'> {
   direction?: TextDirection,
   textAlign?: TextAlign,
   sm?: boolean,
