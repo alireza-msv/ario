@@ -35,7 +35,7 @@ const StyledInputGroup = styled.div`
   margin-top: 16px;
 `;
 
-const InputGroup: React.FC<InputGroupProps> = ({
+const InputGroup = ({
   id,
   label,
   sm,
@@ -45,7 +45,7 @@ const InputGroup: React.FC<InputGroupProps> = ({
   onBlur,
   placeholder,
   ...rest
-}) => {
+}, ref: React.RefObject<HTMLInputElement>) => {
   const [igId, setIgId] = React.useState<string>(id);
   const [focused, setFocused] = React.useState<boolean>(false);
 
@@ -89,6 +89,7 @@ const InputGroup: React.FC<InputGroupProps> = ({
         lg={lg}
         placeholder={focused ? placeholder : ''}
         data-testid="input"
+        ref={ref}
         {...rest}
         onFocus={handleFocus}
         onBlur={handleBlur}
@@ -97,4 +98,4 @@ const InputGroup: React.FC<InputGroupProps> = ({
   );
 };
 
-export default InputGroup;
+export default React.forwardRef<HTMLInputElement, InputGroupProps>(InputGroup);
