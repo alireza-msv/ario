@@ -94,17 +94,15 @@ describe('InputGroup tests', () => {
     expect(label).toHaveStyleRule('transform', 'translate3d(0,-16px,0) scale(0.75)');
   });
 
-  it('should not shrink label on input focus when value is not empty', async () => {
+  it('should shrink label when value is not empty', async () => {
     const { container } = renderInputGroup({
       label: 'test',
       value: 'test',
       onChange: console.log,
     });
     const label = await findByTestId(container, 'label');
-    const input = await findByTestId(container, 'input');
 
-    fireEvent.focus(input);
-    expect(label).toHaveStyleRule('transform', 'translate3d(10px,12px,0) scale(1)');
+    expect(label).toHaveStyleRule('transform', 'translate3d(0,-16px,0) scale(0.75)');
   });
 
   it('should propagate focus event', async () => {

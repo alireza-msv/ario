@@ -74,7 +74,7 @@ const InputGroup = ({
   return (
     <StyledInputGroup>
       <StyledLabel
-        shrink={focused && !value}
+        shrink={focused || !!value}
         htmlFor={igId}
         sm={sm}
         lg={lg}
